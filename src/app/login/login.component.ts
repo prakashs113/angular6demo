@@ -59,14 +59,14 @@ export class LoginComponent implements OnInit {
           // this.tokenobj = data;
           // if (data.length > 0) {
           //   if (data[0].type == 'doctor') {
-          //     this.router.navigate(['DocDash', { outlets: { doc: ['welcomePageView',data[0].DocID] } }]);
+              this.router.navigate(['AdminDash', { outlets: { Adminout: ['welcomePageView'] } }]);
           //   }
           //   else if (data[0].type == 'office') {
           //     this.router.navigate(['/officeDash', { outlets: { office: ['officeDashboard'] } }]);
           //   }
           // } else {
-            alert("Invalid login credentials");
-            return;
+            // alert("Invalid login credentials");
+            // return;
           // }
         });
     }

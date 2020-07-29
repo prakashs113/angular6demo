@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { DashboardModule } from '../dashboard/dashboard.module';
+
 const routes: Routes = [
   {
     path: '',
@@ -17,6 +19,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    DashboardModule,
     HttpClientModule,
     FormsModule, ReactiveFormsModule,
     RouterModule.forChild(routes)
