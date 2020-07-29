@@ -1,0 +1,24 @@
+<div class=" col-md-4 top_margin">
+
+  <form [formGroup]="loginForm">
+    <div class="md-form">
+      <i class="fa fa-user-circle prefix grey-text"></i>
+      <input type="text" formControlName="userName" id="defaultForm-email" class="form-control" #userName>
+      <label for="defaultForm-email">User Name</label>
+    </div>
+    <div class=" mt-5 ">
+      <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" formControlName="passWord" id="defaultForm-pass" class="form-control" #passWord>
+        <label for="defaultForm-pass">Password</label>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a><input type="submit" mdbBtn color="default" (click)="loginFn(userName.value,passWord.value)"
+          sclass="waves-light" mdbWavesEffect value="Login"></a>
+    </div>
+    <div class=" mt-5 md-form">
+    </div>
+  </form>
+</div>
